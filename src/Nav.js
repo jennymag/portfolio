@@ -5,20 +5,16 @@ import { Link } from "react-router-dom";
 const Navbar = Styled.nav`
 display: flex;
 justify-content: space-between; 
-padding: 20px 60px 20px 60px;
-border: 1px solid black;
-color: white;
-background-color: #333333;
-max-height: 32px;
-
-h1{
-text-transform: uppercase;
-padding-top: 5px;
-}
+flex-wrap: wrap;
+padding: 20px 60px 0 60px;
+background-color: white;
+max-height: 235px;
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-family: 'Dawning of a New Day', cursive;
+  font-size: 25px;
 }
 
 `;

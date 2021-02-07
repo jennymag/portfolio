@@ -2,20 +2,54 @@
 import { useParams } from "react-router-dom";
 import projects from "./projects";
 import Styled from "styled-components";
+
 const ProfileDiv = Styled.div`
 display: flex;
+flex-wrap: wrap;
 flex-direction: row-reverse;
-justify-content: center;
+justify-content: flex-end;
+background-color: white;
 
-h1 {
-    paddin-lg: 20px;
+img {
+padding: 40px 0px 30px 30px;
+  width: 55%;
 }
+
 `;
 const InfoBox = Styled.div`
+max-width: 300px;
+padding: 40px 0 0px 70px;
+margin-top: 60px;
 
-    border: 1px solid pink;
-    max-width: 400px;
 
+p {
+  padding-top: 20px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-bottom: 10px;
+  color: gray;
+}
+h2 {
+  color: #333333;
+   margin-top: 30px;
+}
+button {
+  padding: 20px 50px 20px 50px;
+   border-radius: 30px;
+   margin-top: 140px;
+   font-size: 16px;
+background-color: #333333;
+text-transform: uppercase;
+border: none;
+color: white;
+  }
+  button:hover {
+    background-color: #212121;
+    outline: none;
+  }
 `;
 
 function ProjectProfile() {
@@ -36,18 +70,16 @@ function ProjectProfile() {
   return (
     <ProfileDiv>
       <InfoBox>
-        <h1>{project.name}</h1>
-        <p>Description: {project.description}</p>
-        <p>Language: {project.language}</p>
-        <p>
-          Link:
-          <a href={project.link}>{project.link}</a>
-        </p>
+        <h3>Category: {project.category}</h3>
+        <h2>{project.name}</h2>
+        <p>{project.description}</p>
+        <h2>Language:</h2>
+        <p>{project.language}</p>
+        <a href={project.link}>
+          <button>Demo</button>
+        </a>
       </InfoBox>
-
-      <div>
-        <img src={project.img} alt={project.id} />'
-      </div>
+      <img src={project.img} alt={project.id} />
     </ProfileDiv>
   );
 }

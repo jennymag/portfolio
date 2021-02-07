@@ -9,15 +9,16 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import ProjectProfile from "./ProjectProfile";
 
-const GridContainer = Styled.div`
-  display: grid;
-  height: 100vh;
+const FlexContainer = Styled.div`
+  display: flex;
+  flex-direction: column;
+height: 100%;
 `;
 
 function App() {
   return (
     <Router>
-      <GridContainer>
+      <FlexContainer>
         <Nav />
         <Section>
           <Switch>
@@ -37,7 +38,7 @@ function App() {
           </Switch>
         </Section>
         <Footer />
-      </GridContainer>
+      </FlexContainer>
     </Router>
   );
 }

@@ -4,15 +4,19 @@ import Icons from "./Icons";
 const Foot = Styled.section`
 display: flex;
 justify-content: space-between;
-padding: 2% 15% 2% 15%;
-border: 1px solid black;
+flex-wrap: wrap;
+padding: 2% 10% 2% 10%;
 color: white;
 background-color: #333333;
+overflow: hidden;
 
-
-h1 {
-  padding: 0 0 10px 50px;
-  text-transform: uppercase;
+div {
+  margin-bottom: 6px;
+}
+h3 {
+  padding: 0 0 6px 60px;
+  font-size: 40px;
+  font-family: 'Dawning of a New Day', cursive;
 }
 
 img {
@@ -20,7 +24,7 @@ img {
 }
 
 p {
-  max-width: 500px;
+  max-width: 400px;
 }
 `;
 
@@ -28,7 +32,7 @@ function Footer() {
   return (
     <Foot>
       <div>
-        <h1>About me</h1>
+        <h3>About me</h3>
         <p>
           Hello there! I'm a passioned Frontend Developer Student with a big
           interest in design. I'm currently living in Stockholm. My interest in
@@ -37,7 +41,7 @@ function Footer() {
         </p>
       </div>
       <div>
-        <h1>Contact</h1>
+        <h3>Contact</h3>
         <p>
           Find me on my socials down below! Feel free to contact me if you want
           to know more.

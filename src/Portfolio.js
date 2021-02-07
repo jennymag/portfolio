@@ -1,42 +1,127 @@
+import { useState } from "react";
 import Styled from "styled-components";
 import Project from "./Project";
 import projects from "./projects";
-
 const Content = Styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-margin-bottom: 60px;
 
-h1 {
-  padding: 20px;
+li img {
+  width: 3%;
+}
+
+background-color: white;
+ul {
+  display: flex;
+  padding: 40px 0 40px 0;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: gray;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+li {
+  margin: 20px;
+  padding: 5px;
+}
+li:hover {
+  background-color: lightgray;
+}
+.active {
+  background: lightgray;
 }
 `;
-
 const ProjectContainer = Styled.div`
-display: grid;
+display: grid; 
 grid-template-columns: 1fr 1fr 1fr;
-width: 1000px;
-
+min-height: 45vh;
 div{
-border: 1px solid black;
-padding: 20px;  
-margin: 10px;
+margin: 4px;
 }
-
+`;
+const OpsContainer = Styled.div`
+padding-top: 100px;
+min-height: 32vh;
+text-align: center;
+color: darkblue;
 `;
 
 function Portfolio() {
+  const [activeCategory, setActiveCategory] = useState();
+
+  function changeColor(e) {
+    let index = e.target.innerText;
+    if (index === "ALL") {
+      setActiveCategory(undefined);
+    } else if (index === "WEB") {
+      setActiveCategory("web");
+    } else if (index === "APPS") {
+      setActiveCategory("apps");
+    } else if (index === "3D MODELING") {
+      setActiveCategory("3d modeling");
+    }
+  }
+  const filteredProjects = projects.filter(
+    (project) =>
+      project.category === activeCategory || activeCategory === undefined
+  );
+
   return (
     <Content>
-      <h1>My projects</h1>
-      <ProjectContainer>
-        {projects.map((project) => (
-          <Project key={project.id} {...project} />
-        ))}
-      </ProjectContainer>
+      <ul>
+        <li
+          className={activeCategory === undefined ? "active" : ""}
+          onClick={changeColor}
+        >
+          all
+        </li>
+        <li
+          className={activeCategory === "web" ? "active" : ""}
+          onClick={changeColor}
+        >
+          web
+        </li>
+        <li
+          className={activeCategory === "apps" ? "active" : ""}
+          onClick={changeColor}
+        >
+          apps
+        </li>
+        <li
+          className={activeCategory === "3d modeling" ? "active" : ""}
+          onClick={changeColor}
+        >
+          3D modeling
+        </li>
+      </ul>
+
+      {filteredProjects.length > 0 ? (
+        <ProjectContainer>
+          {filteredProjects.map((project) => (
+            <Project key={project.id} {...project} />
+          ))}
+        </ProjectContainer>
+      ) : (
+        <OpsContainer>
+          <p>There are no projects in this category yet...</p>
+        </OpsContainer>
+      )}
     </Content>
   );
 }
+/* <div>
+  Icons made by{" "}
+  <a
+    href="https://www.flaticon.com/authors/pixel-perfect"
+    title="Pixel perfect"
+  >
+    Pixel perfect
+  </a>{" "}
+  from{" "}
+  <a href="https://www.flaticon.com/" title="Flaticon">
+    www.flaticon.com
+  </a>
+</div>; */
 
 export default Portfolio;

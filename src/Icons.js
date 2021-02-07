@@ -11,13 +11,11 @@ const IconContainer = Styled.div`
 
 function Icons() {
   return (
-    <>
-      <IconContainer>
-        <img src={linkedin} alt="linkedin" />
-        <img src={github} alt="github" />
-        <img src={email} alt="email" />
-      </IconContainer>
-    </>
+    <IconContainer>
+      <img src={linkedin} alt="linkedin" />
+      <img src={github} alt="github" />
+      <img src={email} alt="email" />
+    </IconContainer>
   );
 }
 export default Icons;
