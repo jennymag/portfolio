@@ -6,9 +6,7 @@ line-height: 0;
 background-color: white;
 position: relative;
 overflow: hidden;
-
-
-
+border: 1px solid #d3d3d359;
 img {
   width: 100%;
   top: 0;

@@ -6,11 +6,9 @@ const Content = Styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-
 li img {
   width: 3%;
 }
-
 background-color: white;
 ul {
   display: flex;
@@ -44,7 +42,7 @@ const OpsContainer = Styled.div`
 padding-top: 100px;
 min-height: 32vh;
 text-align: center;
-color: darkblue;
+color: gray;
 `;
 
 function Portfolio() {

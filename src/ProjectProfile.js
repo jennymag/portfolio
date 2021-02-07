@@ -9,19 +9,17 @@ flex-wrap: wrap;
 flex-direction: row-reverse;
 justify-content: flex-end;
 background-color: white;
-
 img {
-padding: 40px 0px 30px 30px;
+  margin: 40px 0px 30px 30px;
   width: 55%;
+  border: 1px solid lightgray;
 }
 
 `;
 const InfoBox = Styled.div`
-max-width: 300px;
-padding: 40px 0 0px 70px;
-margin-top: 60px;
-
-
+  max-width: 300px;
+  padding: 40px 0 0px 70px;
+  margin-top: 60px;
 p {
   padding-top: 20px;
 }
@@ -38,13 +36,13 @@ h2 {
 }
 button {
   padding: 20px 50px 20px 50px;
-   border-radius: 30px;
-   margin-top: 140px;
-   font-size: 16px;
-background-color: #333333;
-text-transform: uppercase;
-border: none;
-color: white;
+  border-radius: 30px;
+  margin-top: 140px;
+  font-size: 16px;
+  background-color: #333333;
+  text-transform: uppercase;
+  border: none;
+  color: white;
   }
   button:hover {
     background-color: #212121;
