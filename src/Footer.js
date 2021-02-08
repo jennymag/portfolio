@@ -2,6 +2,8 @@ import Styled from "styled-components";
 import Icons from "./Icons";
 
 const Foot = Styled.section`
+
+
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
@@ -14,6 +16,8 @@ div {
   margin-bottom: 6px;
 }
 h3 {
+  margin: 0;
+padding: 0;
   padding: 0 0 6px 60px;
   font-size: 40px;
   font-family: 'Dawning of a New Day', cursive;

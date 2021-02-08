@@ -3,7 +3,7 @@ import Styled from "styled-components";
 
 const Content = Styled.div`
 background-color: white;
-flex: 1;
+
 h2 {
 text-transform: uppercase;
 }
@@ -14,8 +14,9 @@ button {
   font-size: 13px;
   outline: none;
   padding: 20px;
-  margin: 30px;
+  margin-bottom: 40px;
 }
+
 `;
 const Portbutton = Styled.button`
   &:hover {
@@ -32,12 +33,14 @@ const HomeBox = Styled.div`
 display: flex;
 align-items: center;
 flex-direction: column;
-margin: 30px;
+margin-top: 20px;
+margin-bottom: 80px;
 p {
-  padding: 20px;
+  padding: 5px;
 }
 h2 {
-  margin: 10px;
+  padding: 0;
+  margin: 20px;
 }
 `;
 

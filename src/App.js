@@ -12,7 +12,7 @@ import ProjectProfile from "./ProjectProfile";
 const FlexContainer = Styled.div`
   display: flex;
   flex-direction: column;
-height: 100%;
+  height: 100%;
 `;
 
 function App() {

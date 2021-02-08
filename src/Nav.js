@@ -9,12 +9,13 @@ flex-wrap: wrap;
 padding: 20px 60px 0 60px;
 background-color: white;
 max-height: 235px;
-
-a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Dawning of a New Day', cursive;
-  font-size: 25px;
+h1 {
+  margin: 0;
+  padding: 0;
+}
+img 
+{
+  margin-top: 1px;
 }
 
 `;
@@ -25,7 +26,7 @@ function Nav() {
       <Link to="/">
         <h1>Jenny Magnessen</h1>
       </Link>
-      <div>
+      <div id="icons">
         <Icons />
       </div>
     </Navbar>

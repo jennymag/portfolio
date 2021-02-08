@@ -11,17 +11,17 @@ justify-content: flex-end;
 background-color: white;
 img {
   margin: 40px 0px 30px 30px;
-  width: 55%;
+  width: 60%;
   border: 1px solid lightgray;
 }
 
 `;
 const InfoBox = Styled.div`
   max-width: 300px;
-  padding: 40px 0 0px 70px;
-  margin-top: 60px;
+  padding: 20px 0 0 60px;
+  margin-top: 30px;
 p {
-  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 h3 {
@@ -32,12 +32,12 @@ h3 {
 }
 h2 {
   color: #333333;
-   margin-top: 30px;
+   margin-top: 40px;
 }
 button {
   padding: 20px 50px 20px 50px;
   border-radius: 30px;
-  margin-top: 140px;
+  margin-top: 40px;
   font-size: 16px;
   background-color: #333333;
   text-transform: uppercase;
