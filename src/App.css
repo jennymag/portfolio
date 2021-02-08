@@ -51,6 +51,36 @@ body {
   a {
     font-size: 20px;
   }
+  #profile {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+  }
+  #profile img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  #profile p,
+  #profile h2,
+  #profile h3 {
+    margin: 0;
+    padding: 10px;
+  }
+  #profile button {
+    margin: 60px;
+  }
+  #profile h3 {
+    margin: 40px;
+  }
+  #profileInfo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 484px) {

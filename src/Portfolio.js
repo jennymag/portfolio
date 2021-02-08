@@ -31,18 +31,19 @@ li:hover {
 }
 `;
 const ProjectContainer = Styled.div`
-display: grid; 
-grid-template-columns: 1fr 1fr 1fr;
-min-height: 45vh;
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 6px;
+  grid-row-gap:6px;
 div{
 margin: 4px;
 }
 `;
 const OpsContainer = Styled.div`
-padding-top: 100px;
 min-height: 32vh;
 text-align: center;
 color: gray;
+margin-bottom: 90px;
 `;
 
 function Portfolio() {

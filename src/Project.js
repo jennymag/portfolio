@@ -18,7 +18,6 @@ img {
   transition: transform 0.1s;  
   transform: scale(1.2);
 }
-
 }
 img:hover {
 opacity: 1;
@@ -33,6 +32,7 @@ h3{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);  
+  font-size: 22px;
 }
   &:hover h3{
   opacity: 0;

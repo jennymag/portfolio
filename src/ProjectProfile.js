@@ -66,8 +66,8 @@ function ProjectProfile() {
   }
 
   return (
-    <ProfileDiv>
-      <InfoBox>
+    <ProfileDiv id="profile">
+      <InfoBox id="profileInfo">
         <h3>Category: {project.category}</h3>
         <h2>{project.name}</h2>
         <p>{project.description}</p>
