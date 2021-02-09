@@ -11,8 +11,6 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   opacity: 0.4;
   -webkit-filter: blur(3px);
   transition: transform 0.1s;  

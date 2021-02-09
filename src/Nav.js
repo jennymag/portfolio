@@ -6,12 +6,12 @@ const Navbar = Styled.nav`
 display: flex;
 justify-content: space-between; 
 flex-wrap: wrap;
-padding: 20px 60px 0 60px;
+padding: 20px;
 background-color: white;
 max-height: 235px;
 h1 {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 20px;
 }
 img 
 {

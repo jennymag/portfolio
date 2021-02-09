@@ -5,16 +5,22 @@ import Styled from "styled-components";
 const IconContainer = Styled.div`
   img {
     width: 37px;
-    padding-left: 15px;
+    padding: 10px;
   }
 `;
 
 function Icons() {
   return (
     <IconContainer>
-      <img src={linkedin} alt="linkedin" />
-      <img src={github} alt="github" />
-      <img src={email} alt="email" />
+      <a href="https://linkedin.com/in/jenny-magnessen/a85a84135">
+        <img src={linkedin} alt="linkedin" />
+      </a>
+      <a href="https://github.com/jennymag">
+        <img src={github} alt="github" />
+      </a>
+      <a href="mailto: jenny.magnessen@hotmail.com">
+        <img src={email} alt="email" />
+      </a>
     </IconContainer>
   );
 }

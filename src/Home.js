@@ -13,8 +13,8 @@ button {
   text-transform: uppercase;
   font-size: 13px;
   outline: none;
-  padding: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
+  padding: 20px 40px 20px 40px;
 }
 
 `;
@@ -33,14 +33,14 @@ const HomeBox = Styled.div`
 display: flex;
 align-items: center;
 flex-direction: column;
-margin-top: 20px;
-margin-bottom: 80px;
+margin-top: 40px;
+margin-bottom: 110px;
 p {
-  padding: 5px;
+  padding: 2px;
 }
 h2 {
   padding: 0;
-  margin: 20px;
+  margin: 0px;
 }
 `;
 
@@ -53,12 +53,10 @@ function Home() {
         <Link to="/portfolio">
           <Portbutton>launch portfolio</Portbutton>
         </Link>
-        <h2>CV</h2>
-        <p>
-          Soon you can find my resume here <i>(in progress)</i>
-        </p>
+        <h2>Skills</h2>
+        <p>Soon you can find my resumé here</p>
         <Link to="/cv">
-          <Cvbutton>launch CV</Cvbutton>
+          <Cvbutton>launch resume</Cvbutton>
         </Link>
       </HomeBox>
     </Content>

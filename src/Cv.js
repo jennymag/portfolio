@@ -7,7 +7,7 @@ padding: 250px;
 function Cv() {
   return (
     <Content>
-      <h1>Cv in progress</h1>
+      <h1>Resumé in progress</h1>
     </Content>
   );
 }

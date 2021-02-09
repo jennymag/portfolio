@@ -6,9 +6,6 @@ const Content = Styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-li img {
-  width: 3%;
-}
 background-color: white;
 ul {
   display: flex;
@@ -32,18 +29,15 @@ li:hover {
 `;
 const ProjectContainer = Styled.div`
   display: grid; 
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-column-gap: 6px;
-  grid-row-gap:6px;
-div{
-margin: 4px;
-}
+  grid-row-gap: 6px;
 `;
 const OpsContainer = Styled.div`
 min-height: 32vh;
 text-align: center;
 color: gray;
-margin-bottom: 90px;
+margin-bottom: 210px;
 `;
 
 function Portfolio() {
