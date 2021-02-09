@@ -34,7 +34,7 @@ display: flex;
 align-items: center;
 flex-direction: column;
 margin-top: 40px;
-margin-bottom: 110px;
+margin-bottom: 40px;
 p {
   padding: 2px;
 }
