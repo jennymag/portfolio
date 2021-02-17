@@ -10,7 +10,7 @@ const projects = [
     description:
       "A blog created in React which also lets you write posts, administrate comments and more.. (In progress)",
     language: "React.js",
-    link: "http://jennymag.github.io/calculator",
+    link: "http://jennymag.github.io/blog",
     img: blog,
     id: "blog",
     category: "web",
@@ -30,7 +30,7 @@ const projects = [
     description:
       "This is a web based note application which you can use to write, save or/and delete notes. This is a group project from 2020. Contributors: Jenny, Merab, Justus, Khadija and Ivan",
     language: "Vanilla JavaScript",
-    link: "http://jennymag.github.io/calculator",
+    link: "http://jennymag.github.io/quire",
     img: quire,
     id: "quire",
     category: "web",
@@ -49,7 +49,7 @@ const projects = [
     name: "Pizzatime",
     description: "My first website",
     language: "HTML / CSS",
-    link: "http://jennymag.github.io/guestbook",
+    link: "http://jennymag.github.io/pizzatime",
     img: pizzatime,
     id: "pizzatime",
     category: "web",
