@@ -42,8 +42,8 @@ function Project(props) {
   return (
     <Link to={`/portfolio/${props.id}`}>
       <ProjectHolder>
-        <img src={props.img} alt={props.id} />
-        <h3>{props.name}</h3>
+        <img src={props.img} alt={props.id} id="projectImg" />
+        <h3 id="projectName">{props.name}</h3>
       </ProjectHolder>
     </Link>
   );

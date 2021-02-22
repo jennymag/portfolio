@@ -81,6 +81,15 @@ body {
     flex-direction: column;
     max-width: 100%;
   }
+  #projectImg {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+    transition: transform 0s;
+    transform: scale(1);
+  }
+  #projectName {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 484px) {
