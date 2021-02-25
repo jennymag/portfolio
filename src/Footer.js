@@ -116,7 +116,7 @@ function Footer() {
         <Icons />
       </div>
       <Weather>
-        <h3>Weather in Stockholm today</h3>
+        <h3>Weather in Stockholm</h3>
         <p>
           {hasWeatherError ? (
             "Error: Can not fetch data"

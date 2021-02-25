@@ -24,7 +24,7 @@ function Nav() {
   return (
     <Navbar>
       <Link to="/">
-        <h1>Jenny Magnessen</h1>
+        <h1 id="logo">Jenny Magnessen</h1>
       </Link>
       <div id="icons">
         <Icons />
