@@ -86,13 +86,13 @@ function Footer() {
 
   if (weather === 0) {
     weatherPrecentation = sunny;
-  } else if (weather === 1) {
+  } else if (weather <= 1) {
     weatherPrecentation = rain;
-  } else if (weather === 2) {
+  } else if (weather <= 2) {
     weatherPrecentation = snowflake;
-  } else if (weather === 3) {
+  } else if (weather <= 3) {
     weatherPrecentation = rainandsnow;
-  } else if (weather === 4) {
+  } else if (weather <= 4) {
     weatherPrecentation = icepellets;
   }
 
