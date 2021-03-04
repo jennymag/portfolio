@@ -25,7 +25,7 @@ justify-content: center;
 padding: 29px;
 overflow: hidden;
 img {
-  width: 30%;
+  width: 40%;
 }
 .cloud2 {
   animation-duration: 2s;
@@ -39,14 +39,14 @@ img {
     margin-left: 120%;
   }
   to {
-    margin-left: 0%;
+    margin-left: -0%;
   }
 }
 `;
 const AirplaneDiv = Styled.div`
 overflow: hidden;
 .airplane {
-  animation-duration: 6s;
+  animation-duration: 7s;
   animation-name: airplane;
   animation-iteration-count: 1;
   animation-direction: alternate;
@@ -58,7 +58,7 @@ overflow: hidden;
     margin-left: 100%;
   }
   to {
-    margin-left: -70%;
+    margin-left: -150%;
   }
 }
 `;
@@ -72,6 +72,9 @@ img {
 const GridContainer = Styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
 color: black;
 max-width: 70%;
 margin: 0 auto;
@@ -101,11 +104,10 @@ padding: 20px;
 max-width: 350px;
 `;
 const ImgDiv = Styled.div`
-
   text-align: center;
   margin-top: 10px;
  img {
-  width: 200px;
+  width: 100%;
   border-radius: 30px;
 }                  
 `;
@@ -120,9 +122,10 @@ div {
   justify-content: center;
 }
 img {
-  width: 70px;
+  width: 30%;
+    padding: 0 10px 0 10px;
 }h3 {
-  padding: 0 0 10px 0;
+  padding: 10px 0 10px 0;
 }
 `;
 const SwDiv = Styled.div`
@@ -136,8 +139,8 @@ div {
   justify-content: center;
 }
 img {
-  width: 40px;
-  padding: 0 0 0 10px;
+  width: 15%;
+  padding: 0 10px 0 10px;
 }
 h3 {  
   padding: 0 0 20px 0;
@@ -196,8 +199,8 @@ div {
   justify-content: center;
 }
 img {
-  width: 40px;
-  padding: 0 0 0 10px;
+  width: 15%;
+  padding: 0 10px 0 10px;
 }
 h3 {  
   padding: 0 0 20px 0;
@@ -213,8 +216,8 @@ div {
   justify-content: center;
 }
 img {
-  width: 40px;
-  padding: 0 0 0 10px;
+  width: 15%;
+  padding: 0 10px 0 10px;
 }
 h3 {  
   padding: 0 0 20px 0;
@@ -291,14 +294,14 @@ function Cv() {
         <ExDiv>
           <h3>Experience</h3>
           <GridContainer>
-            <YearDiv>
+            <YearDiv className="yearHide">
               <p>2018 - 2020</p>
               <p>2018</p>
               <p>2015 - 2016</p>
             </YearDiv>
-            <ExcDiv>
+            <ExcDiv className="hideBorder">
               <div>
-                <h4>System Technichan</h4>
+                <h4 className="excH4">System Technichan</h4>
                 <h5>Incoord ∙ Stockholm</h5>
                 <p>
                   I set up and maintained all hard & software, administrated the
@@ -307,7 +310,7 @@ function Cv() {
                 </p>
               </div>
               <div>
-                <h4>IT Support Consultant</h4>
+                <h4 className="excH4">IT Support Consultant</h4>
                 <h5>Wise IT ∙ Stockholm</h5>
                 <p>
                   I gave both 1:st and 2:nd line support onsite, and I was main
@@ -316,7 +319,7 @@ function Cv() {
               </div>
 
               <div>
-                <h4>IT Support Technichan</h4>
+                <h4 className="excH4">IT Support Technichan</h4>
                 <h5>CGI ∙ Lissabon, Portugal</h5>
                 <p>
                   I worked with 1:st line IT-support by phone and email, and I
