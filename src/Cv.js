@@ -21,6 +21,7 @@ background-color: #a9d7bc;
 `;
 const CloudDiv = Styled.div`
 display: flex;
+align-items: flex-start;
 justify-content: center;
 padding: 29px;
 overflow: hidden;
