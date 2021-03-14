@@ -120,6 +120,7 @@ flex-direction: column;
 margin-top: 10px;
 div {
   display: flex;
+  align-items: flex-start;
   justify-content: center;
 }
 img {
@@ -137,6 +138,7 @@ flex-direction: column;
 margin-top: 10px;
 div {
   display: flex;
+  align-items: flex-start;
   justify-content: center;
 }
 img {
@@ -197,6 +199,7 @@ flex-direction: column;
 margin-top: 10px;
 div {
   display: flex;
+  align-items: flex-start;
   justify-content: center;
 }
 img {
@@ -214,6 +217,7 @@ flex-direction: column;
 margin-top: 10px;
 div {
   display: flex;
+  align-items: flex-start;
   justify-content: center;
 }
 img {
