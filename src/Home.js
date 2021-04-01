@@ -22,12 +22,14 @@ const Portbutton = Styled.button`
   &:hover {
   border: 1px solid pink;
   outline: none;
+  cursor: pointer;
   }
 `;
 const Cvbutton = Styled.button`
   &:hover {
   border: 1px solid pink;
   outline: none;
+  cursor: pointer;
 `;
 const HomeBox = Styled.div`
 display: flex;
@@ -54,7 +56,7 @@ function Home() {
           <Portbutton>launch portfolio</Portbutton>
         </Link>
         <h2>Skills</h2>
-        <p>Soon you can find my resumé here</p>
+        <p>Find my resumé here</p>
         <Link to="/cv">
           <Cvbutton>launch resume</Cvbutton>
         </Link>

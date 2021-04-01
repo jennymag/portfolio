@@ -12,7 +12,7 @@ const IconContainer = Styled.div`
 function Icons() {
   return (
     <IconContainer>
-      <a href="https://linkedin.com/in/jenny-magnessen/a85a84135">
+      <a href="https://www.linkedin.com/in/jenny-magnessen-a85a84135">
         <img src={linkedin} alt="linkedin" />
       </a>
       <a href="https://github.com/jennymag">
