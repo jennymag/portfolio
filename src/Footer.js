@@ -83,6 +83,7 @@ function Footer() {
   }, []);
 
   let weatherPrecentation;
+  console.log(weatherPrecentation)
 
   if (weather === 0) {
     weatherPrecentation = sunny;

@@ -324,7 +324,7 @@ function Cv() {
               </div>
 
               <div>
-                <h4 className="excH4">IT Support Technichan</h4>
+                <h4 className="excH4">IT Support Technician</h4>
                 <h5>CGI ∙ Lissabon, Portugal</h5>
                 <p>
                   I worked with 1:st line IT-support by phone and email, and I
